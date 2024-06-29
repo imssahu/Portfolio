@@ -34,10 +34,15 @@ export const Home = () => {
         <p className={styles.description}>
           I'm a <span className={styles.typedtext} ref={typedElement}></span>
         </p>
-        <a href=" drive link" className={styles.CVBtn}>
-          Download CV
-        </a>
       </div>
+      <a
+        href="https://drive.google.com/file/d/1FypifijvZBZi7AoiVC3n_n56vbJUap0H/view?usp=sharing"
+        className={styles.CVBtn}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Download CV
+      </a>
 
       <div className={styles.topBlur} />
       <div className={styles.bottomBlur} />
