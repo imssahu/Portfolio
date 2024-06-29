@@ -1,0 +1,161 @@
+@import "../../vars.css";
+
+.container {
+  color: var(--color-text);
+  margin-top: 120px;
+  background-color: var(--color-secoundary);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
+  padding: 58px 10%;
+  gap: 10px;
+}
+
+.text h2 {
+  font-size: 80px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+p {
+  font-size: 40px;
+}
+.contactsForm {
+  width: 200%;
+}
+
+.inputContainer {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+.name,
+.email,
+.message {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+.name:focus,
+.email:focus,
+.message:focus {
+  border-color: #66afe9;
+  outline: none;
+}
+
+.message {
+  min-height: 200px;
+  resize: none;
+}
+.submitbtncontainer {
+  text-align: center;
+}
+
+.submitBtn {
+  background-color: #081fee;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.submitBtn:hover {
+  background-color: #6b3ae8;
+  transform: scale(1.05);
+}
+
+.submitBtn:active {
+  background-color: #081fee;
+  transform: scale(1);
+}
+
+@media (max-width: 830px) {
+  .text {
+    padding: 10px;
+  }
+
+  .name,
+  .email,
+  .message {
+    width: calc(100% - 12px);
+  }
+  .contactsForm {
+    width: 600px;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  gap: 26px;
+  margin-left: 350px;
+}
+
+.link {
+  display: flex;
+  gap: 25px;
+}
+
+.link a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  transition: 0.2s;
+}
+.link a:hover {
+  font-size: 35px;
+}
+
+.iconTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+.iconTop a {
+  display: inline-flex;
+  padding: 0.8rem;
+  background: var(--color-primary);
+  border-radius: 0.8rem;
+  transition: 0.5s ease;
+  right: 5px;
+}
+
+.iconTop a:hover {
+  box-shadow: 0 0 1rem rgb(30, 177, 230);
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .links {
+    align-items: center;
+    margin-left: 50px;
+  }
+  .iconTop a {
+    margin-left: 600px;
+  }
+}

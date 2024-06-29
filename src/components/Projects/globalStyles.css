@@ -1,0 +1,28 @@
+/* globalStyles.css */
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #eeeef3;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 2.5rem;
+}
+
+.swiper-pagination {
+  position: relative;
+  padding-top: 25px;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background: white;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: rgb(52, 18, 221);
+}
