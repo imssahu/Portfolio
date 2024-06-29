@@ -25,7 +25,7 @@ export const Home = () => {
         <Particle />
       </div>
       <img
-        src={getImageUrl("Profile/profile.png")}
+        src="assets\Profile\profile.png"
         alt="image of me"
         className={styles.mImg}
       />
